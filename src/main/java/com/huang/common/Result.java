@@ -1,7 +1,7 @@
 package com.huang.common;
 
 public class Result<T> {
-	private boolean isOk;
+	private boolean ok;
 	private int code;// 代码
 	private String message;// 消息
 	private T data;// 数据
@@ -10,18 +10,18 @@ public class Result<T> {
 	}
 
 	public Result(boolean isOk, int code, String message, T data) {
-		this.isOk = isOk;
+		this.ok = isOk;
 		this.code = code;
 		this.message = message;
 		this.data = data;
 	}
 
 	public boolean isOk() {
-		return isOk;
+		return ok;
 	}
 
-	public void setOk(boolean isOk) {
-		this.isOk = isOk;
+	public void setOk(boolean ok) {
+		this.ok = ok;
 	}
 
 	public int getCode() {
